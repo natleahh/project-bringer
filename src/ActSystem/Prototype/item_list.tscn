@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://b8gcgh0w6qx3i"]
+
+[ext_resource type="Texture2D" uid="uid://ddc723ie3r1c6" path="res://icon.svg" id="1_58agw"]
+
+[node name="HBoxContainer" type="Control" unique_id=392090023]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ItemList" type="ItemList" parent="." unique_id=101477136]
+layout_mode = 1
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_right = 400.0
+grow_vertical = 2
+item_count = 1
+item_0/icon = ExtResource("1_58agw")
