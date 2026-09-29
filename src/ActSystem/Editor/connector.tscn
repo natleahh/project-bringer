@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://c0r1jnp3befac"]
 
-[ext_resource type="Script" uid="uid://dcdqu78e3sph1" path="res://src/ActSystem/Editor/Elements/connector.gd" id="1_qa1jo"]
+[ext_resource type="Script" uid="uid://dcdqu78e3sph1" path="res://src/ActSystem/Editor/Elements/ui_connector.gd" id="1_qa1jo"]
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_qa1jo"]
 size = Vector2(8, 8)

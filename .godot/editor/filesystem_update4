@@ -1,0 +1,6 @@
+res://src/ActSystem/Editor/link.tscn
+res://src/ActSystem/Player/main.gd
+res://src/ActSystem/Editor/Elements/ui_link.gd
+res://src/ActSystem/Editor/connector.tscn
+res://src/ActSystem/Editor/main.tscn
+res://src/ActSystem/Editor/Elements/editor_window.gd

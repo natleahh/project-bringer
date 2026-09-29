@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cq3808x6ynkr0"]
 
-[ext_resource type="Script" uid="uid://baom236sunde3" path="res://src/ActSystem/Editor/Elements/bit.gd" id="1_rnr05"]
+[ext_resource type="Script" uid="uid://baom236sunde3" path="res://src/ActSystem/Editor/Elements/ui_bit.gd" id="1_rnr05"]
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_g4ncw"]
 size = Vector2(150, 100)
