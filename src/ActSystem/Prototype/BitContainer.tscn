@@ -1,6 +1,0 @@
-[gd_scene format=3 uid="uid://p6nyh6ydphxr"]
-
-[ext_resource type="Script" uid="uid://dv1vn0xtm74rt" path="res://src/ActSystem/Prototype/prototype_connector.gd" id="1_8r14x"]
-
-[node name="HBoxContainer" type="HBoxContainer" unique_id=1884398059]
-script = ExtResource("1_8r14x")

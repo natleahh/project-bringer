@@ -22,7 +22,7 @@ static func from_data(connector_data: ConnectorData, parent_bit: AGBit) -> AGCon
 
 func update_link(new_link: AGLink) -> void:
 	link = new_link
-	updated.emit(self)
+	updated.emit()
 	
 
 func unlink() -> void:

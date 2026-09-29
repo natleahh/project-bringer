@@ -1,12 +1,13 @@
 class_name AGLink extends AGElement
+
 var a: AGConnector
 var b: AGConnector
 
 func unlink() -> void:
 	a.link = null
 	b.link = null
-	a.updated.emit(a)
-	b.updated.emit(b)
+	a.updated.emit()
+	b.updated.emit()
 	removed.emit(self)
 	
 
