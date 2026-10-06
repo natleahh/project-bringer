@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://c35psn3j822tp"]
+
+[ext_resource type="Script" uid="uid://c6qf88t5olluq" path="res://src/Physics/main.gd" id="1_x1q4k"]
+
+[node name="Main" type="Node2D" unique_id=720187811 node_paths=PackedStringArray("connections", "bits")]
+script = ExtResource("1_x1q4k")
+connections = NodePath("Connections")
+bits = NodePath("Bits")
+
+[node name="Button" type="Button" parent="." unique_id=1223847244]
+offset_right = 8.0
+offset_bottom = 8.0
+text = "New Node"
+
+[node name="Connections" type="Node" parent="." unique_id=1322517846]
+
+[node name="Bits" type="Node" parent="." unique_id=53261846]
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
