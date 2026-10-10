@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://bilqpbhnkwdps"]
+
+[ext_resource type="Script" uid="uid://q10d5xlndtm6" path="res://src/Physics/BitUI/link_ui.gd" id="1_3x6wb"]
+
+[node name="LinkUI" type="Control" unique_id=350995612]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_3x6wb")

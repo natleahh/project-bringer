@@ -1,9 +1,11 @@
 [gd_scene format=3 uid="uid://c35psn3j822tp"]
 
 [ext_resource type="Script" uid="uid://c6qf88t5olluq" path="res://src/Physics/main.gd" id="1_x1q4k"]
+[ext_resource type="Script" uid="uid://b5gdldrxu51jy" path="res://src/Physics/act_player.gd" id="2_hbqxm"]
 
-[node name="Main" type="Node2D" unique_id=720187811 node_paths=PackedStringArray("connections", "bits")]
+[node name="Main" type="Node2D" unique_id=720187811 node_paths=PackedStringArray("act_player", "connections", "bits")]
 script = ExtResource("1_x1q4k")
+act_player = NodePath("ActPlayer")
 connections = NodePath("Connections")
 bits = NodePath("Bits")
 
@@ -16,4 +18,12 @@ text = "New Node"
 
 [node name="Bits" type="Node" parent="." unique_id=53261846]
 
+[node name="ActPlayer" type="Node" parent="." unique_id=2041795264]
+script = ExtResource("2_hbqxm")
+
+[node name="Timer" type="Timer" parent="ActPlayer" unique_id=1483967535]
+wait_time = 5.0
+one_shot = true
+
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="timeout" from="ActPlayer/Timer" to="ActPlayer" method="_on_timer_timeout"]

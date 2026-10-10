@@ -1,9 +1,7 @@
 res://src/Physics/main.tscn
+res://src/Physics/BitLogic/act_graph.gd
+res://src/Physics/BitLogic/bit_node.gd
+res://src/Physics/BitUI/link_ui.gd
 res://src/Physics/main.gd
-res://src/Physics/act_graph.gd
-res://src/Physics/act_bit.gd
-res://src/Physics/bit_ui.gd
-res://src/Physics/BitUI/bit_ui.tscn
-res://src/Physics/BitUI/bit_ui.gd
-res://src/Physics/bit_data.gd
-res://src/Physics/BitUI/act_link.gd
+res://src/Physics/act_player.gd
+res://src/Physics/BitLogic/bit_connector.gd

@@ -25,4 +25,4 @@ static func randomise() -> BitData:
 	return bd
 
 static func get_type_color(_type: Type) -> Color:
-	return COLOR_MAPPING[_type]
+	return COLOR_MAPPING[_type] if _type != null else Color.WHITE

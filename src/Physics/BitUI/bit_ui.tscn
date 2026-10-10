@@ -2,44 +2,60 @@
 
 [ext_resource type="Script" uid="uid://dxodiivhpxbca" path="res://src/Physics/BitUI/bit_ui.gd" id="1_2ad1e"]
 
-[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_2ad1e"]
-size = Vector2(96, 64)
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2ad1e"]
-size = Vector2(96, 64)
+size = Vector2(142, 96)
 
-[node name="BitUi" type="StaticBody2D" unique_id=1696179670 node_paths=PackedStringArray("collision_shape_2d")]
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_2ad1e"]
+size = Vector2(142, 96)
+
+[node name="BitUi" type="RigidBody2D" unique_id=1100953243 node_paths=PackedStringArray("type_indicator", "player_indicator", "connectors")]
 input_pickable = true
+gravity_scale = 0.0
+lock_rotation = true
 script = ExtResource("1_2ad1e")
-collision_shape_2d = NodePath("CollisionShape2D")
+type_indicator = NodePath("Sprite2D/TypeIndicator")
+player_indicator = NodePath("Sprite2D/Player Indicator")
+connectors = NodePath("Sprite2D/Connectors")
 metadata/_custom_type_script = "uid://dxodiivhpxbca"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1623719171]
+shape = SubResource("RectangleShape2D_2ad1e")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1738450070]
 texture = SubResource("PlaceholderTexture2D_2ad1e")
 
-[node name="CanvasModulate" type="CanvasModulate" parent="Sprite2D" unique_id=2019248506]
-
-[node name="Control" type="Control" parent="Sprite2D" unique_id=1913910687]
-layout_mode = 3
-anchors_preset = 7
-anchor_left = 0.5
+[node name="Connectors" type="HBoxContainer" parent="Sprite2D" unique_id=321239007]
+anchors_preset = 12
 anchor_top = 1.0
-anchor_right = 0.5
-anchor_bottom = 1.0
-offset_left = -48.0
-offset_top = -32.0
-offset_right = -48.0
-offset_bottom = -32.0
-grow_horizontal = 2
-grow_vertical = 0
-
-[node name="Label" type="Label" parent="Sprite2D/Control" unique_id=1108766032]
-layout_mode = 1
-anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = -71.0
+offset_top = -68.0
+offset_right = -71.0
+offset_bottom = -48.0
 grow_horizontal = 2
-grow_vertical = 2
+grow_vertical = 0
+size_flags_horizontal = 3
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1623719171]
-shape = SubResource("RectangleShape2D_2ad1e")
+[node name="TypeIndicator" type="ColorRect" parent="Sprite2D" unique_id=2085974024]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -87.0
+offset_top = -48.0
+offset_right = -71.0
+offset_bottom = 16.0
+grow_horizontal = 0
+mouse_filter = 2
+
+[node name="Player Indicator" type="ColorRect" parent="Sprite2D" unique_id=160609614]
+visible = false
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -81.0
+offset_top = -66.0
+offset_right = -61.0
+offset_bottom = -48.0
+grow_horizontal = 2
+color = Color(0.627451, 0.1254902, 0.9411765, 1)
